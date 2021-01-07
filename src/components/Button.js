@@ -4,8 +4,13 @@ import classNames from 'classnames';
 import './Button.scss';
 
 // large, medium, small
-const Button = ({ children, size, color, outline, fullWidth }) => {
-  return <button className={classNames('Button', size, color, { outline, fullWidth })}>{children}</button>;
+const Button = ({ children, size, color, outline, fullWidth, className, ...rest }) => {
+  console.log(rest);
+  return (
+    <button className={classNames('Button', size, color, { outline, fullWidth }, className)} {...rest}>
+      {children}
+    </button>
+  );
 };
 
 Button.defaultProps = {
