@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import CssModule from './CssModule';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import SassTotorial from './SassTotorial';
+// import SassTotorial from './SassTotorial';
 
 ReactDOM.render(
   <React.StrictMode>
-    <SassTotorial />
+    <CssModule />
   </React.StrictMode>,
   document.getElementById('root')
 );
