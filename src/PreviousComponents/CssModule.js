@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CheckBox from './components/CheckBox';
+import CheckBox from './CheckBox';
 
 const CssModule = () => {
   const [check, setCheck] = useState(false);
