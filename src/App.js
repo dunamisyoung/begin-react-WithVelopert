@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
 import About from './About';
+import HistorySample from './HistorySample';
 import Home from './Home';
 import Profiles from './Profiles';
 
@@ -18,12 +19,16 @@ const App = () => {
         <li>
           <Link to="/profiles">프로필 목록</Link>
         </li>
+        <li>
+          <Link to="/history">예제</Link>
+        </li>
       </ul>
       <hr />
       {/* Route path="주소규칙" component={보여줄 컴포넌트}*/}
       <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
       <Route path="/profiles" component={Profiles} />
+      <Route path="/history" component={HistorySample} />
       {/* profiles 뒤에있는 :username 과 같이 생긴게 url 파라미터이다. */}
     </div>
   );
